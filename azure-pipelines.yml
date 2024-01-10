@@ -7,8 +7,7 @@ trigger:
 
 - main
 
-pool:
-  vmImage: MiPcAgent
+pool: MiPcAgent
 
 jobs:
 - job: SaveFilesToGitHub
