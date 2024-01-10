@@ -11,7 +11,7 @@ pool: MiPcAgent
 
 jobs:
 - job: SaveFilesToGitHub
-  displayName: 'Save Files to GitHub'
+  displayName: 'Guardar Archivos en GitHub'
   steps:
   - checkout: self
 
@@ -19,27 +19,20 @@ jobs:
   
   - script: |
       
-      #Create a directory to store files
       mkdir FilesToSave
       
-      # Copy files to the directory
       C:\XCELERA\EVIDENCE\24173_PlanEjecucionVictorEscobar\2067\17859_SuiteEntrenamiento\179734
       
-      # Initialize a Git repository in the build directory
       git init
       git config --global user.email "vlopez@gmail.com"
       git config --global user.name "vlopez888"
 
-      # Add the files to the Git repository
       git add C:\XCELERA\EVIDENCE\24173_PlanEjecucionVictorEscobar\2067\17859_SuiteEntrenamiento\179734
 
-      # Commit the changes
       git commit -m "Add files to GitHub repository"
 
-      # Set up the GitHub repository URL
       git remote add origin https://github.com/vlopez888/CargaEvidencia.git
 
-      # Push changes to GitHub
       git push -u origin main
-    displayName: 'Save files to GitHub'
+    displayName: 'terminado guardado'
 
