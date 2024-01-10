@@ -14,8 +14,6 @@ jobs:
   displayName: 'Guardar Archivos en GitHub'
   steps:
   - checkout: self
-
-  # Your build and test steps go here
   
   - script: |
       
@@ -23,6 +21,7 @@ jobs:
       
       C:\XCELERA\EVIDENCE\24173_PlanEjecucionVictorEscobar\2067\17859_SuiteEntrenamiento\179734
       
+      git version
       git init
       git config --global user.email "vlopez@gmail.com"
       git config --global user.name "vlopez888"
