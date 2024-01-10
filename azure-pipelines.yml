@@ -16,22 +16,10 @@ jobs:
   - checkout: self
   
   - script: |
-      
-      mkdir FilesToSave
-      
-      C:\XCELERA\EVIDENCE\24173_PlanEjecucionVictorEscobar\2067\17859_SuiteEntrenamiento\179734
-      
+      displayName: 'guardar en GitHub'
       git version
       git init
-      git config --global user.email "vlopez@gmail.com"
-      git config --global user.name "vlopez888"
-
-      git add C:\XCELERA\EVIDENCE\24173_PlanEjecucionVictorEscobar\2067\17859_SuiteEntrenamiento\179734
-
-      git commit -m "Add files to GitHub repository"
-
-      git remote add origin https://github.com/vlopez888/CargaEvidencia.git
-
-      git push -u origin main
-    displayName: 'terminado guardado'
+      cd workspace
+      ls
+      
 
